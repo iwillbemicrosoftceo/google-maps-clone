@@ -1,6 +1,5 @@
-require('dotenv').config();
-const token = process.env.TOKEN
-mapboxgl.accessToken = token
+import { tokin } from "secrets.json";
+mapboxgl.accessToken = tokin
 
 // Location Grabbing
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, { enableHighAccuracy: true })
