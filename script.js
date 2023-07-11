@@ -1,4 +1,4 @@
-const token = "pk.eyJ1IjoiaG9sb2thNTY1NiIsImEiOiJjbGp5aTNsc2owNHJxM21wNGJpczR5dnFpIn0.5PTg-ZppRDvwgZq4z4i5qg"
+const token = process.env.TOKEN
 mapboxgl.accessToken = token
 
 // Location Grabbing
