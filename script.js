@@ -1,5 +1,5 @@
-import { tokin } from "secrets.json";
-mapboxgl.accessToken = tokin
+const secrets = require("./secrets.json")
+mapboxgl.accessToken = secrets.tokin
 
 // Location Grabbing
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, { enableHighAccuracy: true })
