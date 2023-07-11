@@ -1,5 +1,5 @@
-const secrets = require("./secrets.json")
-mapboxgl.accessToken = secrets.tokin
+const token = "pk.eyJ1IjoibGludXhjb29sIiwiYSI6ImNsanlxeDlteTA0djAzZXAyenZneDZxMnkifQ.6R7uQjlHZyG1CQvCi-DvDw"
+mapboxgl.accessToken = token
 
 // Location Grabbing
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, { enableHighAccuracy: true })
@@ -20,7 +20,7 @@ function errorLocation() {
 function setupMap(c) { 
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/linuxcool/cljyr5eng00es01qn2vtg206q',
         center: c,
         zoom: 15
     });
