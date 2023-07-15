@@ -20,7 +20,7 @@ function errorLocation() {
 function setupMap(c) { 
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/linuxcool/cljyr5eng00es01qn2vtg206q',
+        style: 'mapbox://styles/mapbox/streets-v11',
         center: c,
         zoom: 15
     });
